@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Real Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        /* Scrolling banner */
+        .banner {
+            background-color: gold;
+            color: darkblue;
+            font-size: 18px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: flex;
+            padding: 15px;
+        }
+        aside {
+            background-color: #fff8dc;
+            width: 20%;
+            padding: 15px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            margin-left: 15px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        img {
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background: orange;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: gold;
+        }
+        /* Optional blinking text effect */
+        .blink {
+            animation: blink-animation 1s steps(2, start) infinite;
+        }
+        @keyframes blink-animation {
+            to { visibility: hidden; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>My Awesome Website</header>
+
+    <!-- Moving banner -->
+    <div class="banner">
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+            Welcome to My Website! Learn HTML, CSS, and JavaScript step by step!
+        </marquee>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+                <li><a href="https://www.google.com/">Google</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Welcome</h2>
+            <p>This is the main content area of my website.</p>
+
+            <!-- Slideshow image -->
+            <img src="me.jpg" width="250" alt="Slideshow">
+
+            <h3>Try Random Background Color</h3>
+            <button onclick="randomColor()">Change Color</button>
+
+            <h3 class="blink">This text blinks!</h3>
+        </main>
+    </div>
+
+    <footer>© 2025 My Website | Contact: myemail@example.com</footer>
+
+    <script>
+        // Random background color button
+        function randomColor() {
+            const colors = ["lightblue", "lightgreen", "pink", "lavender", "yellow"];
+            const random = Math.floor(Math.random() * colors.length);
+            document.body.style.backgroundColor = colors[random];
+        }
+
+        // Automatic slideshow: switch image every 2 seconds
+        let images = ["me.jpg", "friend.jpg"];
+        let index = 0;
+        setInterval(() => {
+            const img = document.querySelector("main img");
+            if (img) {
+                index = (index + 1) % images.length;
+                img.src = images[index];
+            }
+        }, 2000);
+    </script>
+
+</body>
+</html>
