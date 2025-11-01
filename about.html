@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Real Website</title>
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; }
-        header { background: linear-gradient(to right, #4CAF50, #81C784); color: white; padding: 20px; text-align: center; font-size: 28px; font-weight: bold; }
-        nav { background-color: #333; display: flex; justify-content: center; }
-        nav a { color: white; padding: 14px 25px; text-decoration: none; }
-        nav a:hover { background-color: #575757; }
-        .container { display: flex; padding: 15px; }
-        aside { background-color: #fff8dc; width: 20%; padding: 15px; box-shadow: 2px 2px 5px gray; }
-        main { flex: 1; padding: 20px; background-color: white; margin-left: 15px; box-shadow: 2px 2px 5px gray; }
-        footer { background-color: #333; color: white; text-align: center; padding: 15px; font-size: 14px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Ayush Pandey</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 40px 10px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1b4f72;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #145a8d;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .about-container h2 {
+      color: #2e86de;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      line-height: 1.8;
+      font-size: 17px;
+      color: #444;
+    }
+
+    .skills {
+      margin-top: 30px;
+    }
+
+    .skill-box {
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #2e86de;
+    }
+
+    footer {
+      background-color: #1b4f72;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <header>My Awesome Website</header>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <aside>
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
-                <li><a href="https://www.google.com/">Google</a></li>
-            </ul>
-        </aside>
-        <main>
-            <h2>About me</h2>
-            <p>Hii , this is ayush pandey. This is my first website and it is just a static website. I am learning to build websites!</p>
-        </main>
+
+  <header>About Me</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="about-container">
+    <h2>Who am I?</h2>
+    <p>
+      Hello! I'm <b>Ayush Pandey</b>, a student of Class 10 who is passionate about technology, web development, and creativity.
+      I started learning HTML, CSS, and JavaScript to understand how real websites work and to create my own ideas online.
+    </p>
+
+    <p>
+      I enjoy experimenting with design, animations, and small web projects that challenge my skills and teach me something new every day.
+      My goal is to become a skilled developer and build websites or apps that can help people.
+    </p>
+
+    <div class="skills">
+      <h2>My Skills 💻</h2>
+      <div class="skill-box">HTML – Structure of websites</div>
+      <div class="skill-box">CSS – Styling and layouts</div>
+      <div class="skill-box">JavaScript – Adding interactivity</div>
+      <div class="skill-box">GDevelop – 2D game development</div>
     </div>
-    <footer>© 2025 My Website | Contact: akp802221@mail.com</footer>
+  </div>
+
+  <footer>
+    © 2025 Ayush Pandey | Built with ❤️ using HTML & CSS
+  </footer>
+
 </body>
 </html>

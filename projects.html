@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Ayush Pandey</title>
+  <title>My Projects | Ayush Pandey</title>
   <style>
     body {
       margin: 0;
@@ -40,67 +40,44 @@
       background-color: #145a8d;
     }
 
-    .contact-container {
-      max-width: 900px;
+    .project-container {
+      max-width: 1000px;
       margin: 50px auto;
-      background-color: white;
       padding: 40px;
+      background-color: white;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    h2 {
+    .project {
+      border-left: 5px solid #2e86de;
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .project h3 {
       color: #2e86de;
-      margin-bottom: 20px;
-      text-align: center;
+      margin-bottom: 10px;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    .project p {
+      line-height: 1.6;
+      color: #555;
     }
 
-    input, textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    button {
-      background-color: #2e86de;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #145a8d;
-    }
-
-    .social {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .social a {
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
       text-decoration: none;
       color: white;
-      background-color: #e1306c;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
+      background-color: #2e86de;
+      padding: 8px 15px;
+      border-radius: 6px;
       transition: 0.3s;
     }
 
-    .social a:hover {
-      background-color: #c2185b;
+    .project a:hover {
+      background-color: #145a8d;
     }
 
     footer {
@@ -115,7 +92,7 @@
 </head>
 <body>
 
-  <header>Contact Me</header>
+  <header>My Projects</header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -124,21 +101,34 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="contact-container">
-    <h2>Let's Connect!</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <div class="project-container">
 
-    <div class="social">
-      <h2>Follow Me on Instagram 📸</h2>
-      <a href="https://www.instagram.com/dailydoseofhasya" target="_blank">
-        Visit My Instagram
-      </a>
+    <div class="project">
+      <h3>🌐 Personal Portfolio Website</h3>
+      <p>
+        A simple personal website built using HTML, CSS, and JavaScript.  
+        It includes my introduction, skills, and contact section — my very first complete website project.
+      </p>
+      <a href="index.html">View Project</a>
     </div>
+
+    <div class="project">
+      <h3>🎮 Jungle Runner Game (GDevelop)</h3>
+      <p>
+        A 2D jungle-themed runner game developed using GDevelop.  
+        The player avoids obstacles and collects coins while running through the forest.
+      </p>
+      <a href="#">Play Game</a>
+    </div>
+
+    <div class="project">
+      <h3>📱 Meme Page Design</h3>
+      <p>
+        A creative social media concept project where I designed layouts for meme and humor content using Canva and HTML.
+      </p>
+      <a href="#">View Design</a>
+    </div>
+
   </div>
 
   <footer>
